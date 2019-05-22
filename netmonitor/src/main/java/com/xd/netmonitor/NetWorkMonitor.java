@@ -30,7 +30,7 @@ public class NetWorkMonitor {
     public void init(Application application) {
         this.application = application;
         IntentFilter intentFilter = new IntentFilter();
-        intentFilter.addAction(ANDROID_NET_CHANGE_ACTION);
+        intentFilter.addAction(INSTANCE.getANDROID_NET_CHANGE_ACTION());
         application.registerReceiver(mBroadcastReceiver, intentFilter);
     }
 

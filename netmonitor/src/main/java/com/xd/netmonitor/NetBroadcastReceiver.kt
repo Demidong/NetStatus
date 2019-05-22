@@ -90,8 +90,10 @@ class NetBroadcastReceiver : BroadcastReceiver() {
         for (method in methods) {
             val network = method.getAnnotation(Network::class.java) ?: continue
             val paramTypes = method.parameterTypes
-            val manager = MethodManager(paramTypes[0], network.netType, method)
-            list.add(manager)
+            if(paramTypes.isNotEmpty()){
+                val manager = MethodManager(paramTypes[0], network.netType, method)
+                list.add(manager)
+            }
         }
         return list
     }
