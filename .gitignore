@@ -1,0 +1,62 @@
+#built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Eclipse project files
+.classpath
+.project
+
+# Facebook infer
+infer-out/
+
+# Android Studio
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+/*/build/
+captures/
+
+common/common.iml
+build-fastdex
+
+*.iml
+ajcore.*.txt
+
+watcher
+
+.gradletasknamecache
+PythonTool/output_.DS_Store/
+demo/src/main/res
+outputs
+tmp_file.tmp
+.dxtmp
+
+
+freeline_project_description.json
+freeline
+freeline.py
+
+test/
+
+学股堂路由.json
+AndroidManifest.xml.bak
